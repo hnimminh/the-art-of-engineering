@@ -297,7 +297,25 @@ monitor capture CBUF export tftp://x.x.x.x/CBUF.pcap
 
 ### ROUTER GET RESOURCE
 ```
-show platform software status control-processor brief
+#show platform software status control-processor brief
+Load Average
+ Slot Status 1-Min 5-Min 15-Min
+ RP0 Healthy  1.03  1.01  1.00
+
+Memory (kB)
+ Slot Status  Total   Used (Pct)   Free (Pct) Committed (Pct)
+ RP0 Healthy 3950548 3035068 (77%)  915480 (23%)  2542008 (64%)
+
+CPU Utilization
+ Slot CPU  User System  Nice  Idle  IRQ  SIRQ IOwait
+ RP0  0  1.80  6.60  0.00 91.60  0.00  0.00  0.00
+     1  0.70  0.50  0.00 98.79  0.00  0.00  0.00
+     2  3.10  6.40  0.00 90.50  0.00  0.00  0.00
+     3  0.70  0.40  0.00 98.89  0.00  0.00  0.00
+     4  1.90  0.10  0.00 98.00  0.00  0.00  0.00
+     5  0.00  0.00  0.00 100.00  0.00  0.00  0.00
+     6 24.20 75.80  0.00  0.00  0.00  0.00  0.00
+     7  0.00  0.00  0.00 100.00  0.00  0.00  0.00
 ```
 
 
