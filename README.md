@@ -4,7 +4,7 @@
 
 <h1 align="center">The Art of Engineering</h1>
 <h2 align="center">knowledge is power</h2>
-<p align="left"><b>A collection of best practice, command line, toolkits, cheatsheets, networks, security note and more for any computer engineer.</b></p>
+<p align="center"><b>A collection of best practice, command line, toolkits, cheatsheets, networks, security note and more for any computer engineer.</b></p>
 <p align="center">
   <a href="LICENSE.md" target="_blank">
     <img src="https://badgen.net/badge/license/MIT/blue" alt="">
