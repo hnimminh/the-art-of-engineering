@@ -25,6 +25,13 @@ systemctl restart chronyd ; watch chronyc tracking
 /sbin/hwclock --systohc
 ```
 
+* How to Insert a Line at Specific Line Number
+```
+awk 'NR==<line-number>{print "    New Line with awk"}1' filename
+sed -i '<line-number> i New of New Line with sed' filename 
+```
+[ref](https://www.baeldung.com/linux/insert-line-specific-line-number)
+
 ## SSH
 
 # SSH Client Configuration
