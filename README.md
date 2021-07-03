@@ -20,6 +20,7 @@
 ## Table of Contents
 - [Linux](./linux.md)
 - [Cisco](./cisco.md)
+- [Ansible Best Practice](./ansible.md)
 - [Netfilter]()
 
 
