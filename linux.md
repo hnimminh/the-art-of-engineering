@@ -12,6 +12,16 @@
 * trace: ```last -x```
 * investigate: ```grep -iv ': starting\|kernel: .*: Power Button\|watching system buttons\|Stopped Cleaning Up\|Started Crash recovery kernel' /var/log/messages /var/log/syslog /var/log/apcupsd* \| grep -iw 'recover[a-z]*\|power[a-z]*\|shut[a-z ]*down\|rsyslogd\|ups'```
 
+## NTP _ CHRONY
+```
+/etc/chrony.conf - server 192.168.0.51 iburst prefer
+chronyc tracking
+chronyc source
+chronyc sources -v
+
+systemctl restart chronyd ; watch chronyc tracking
+/sbin/hwclock --systohc
+```
 
 ## SSH
 
