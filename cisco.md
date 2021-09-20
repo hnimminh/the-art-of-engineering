@@ -252,6 +252,7 @@ https://blog.ine.com/2008/02/15/the-inside-and-outside-of-nat
 https://networklessons.com/cisco/ccie-routing-switching/nat-virtual-interface
 https://www.cisco.com/c/en/us/td/docs/routers/access/wireless/software/guide/SysMsgLogging.html
 https://www.ciscozine.com/nat-virtual-interface-aka-nvi-what-is-that/
+https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/cube/configuration/cube-book/voi-cube-cisco-smart-licensing.html
 
 
 
