@@ -69,4 +69,5 @@ killall Dock
 defaults delete com.apple.Dock autohide-delay
 ```
 * Startup Volume ```sudo nvram StartupMute=%01```
+* Disable Power Button ```defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool```
 
