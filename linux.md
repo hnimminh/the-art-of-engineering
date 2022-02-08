@@ -71,3 +71,10 @@ defaults delete com.apple.Dock autohide-delay
 * Startup Volume ```sudo nvram StartupMute=%01```
 * Disable Power Button ```defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool yes```
 
+* Mac Name
+```
+sudo scutil --set HostName <new host name>
+sudo scutil --set LocalHostName <new host name>
+sudo scutil --set ComputerName <new name>
+dscacheutil -flushcache
+```
