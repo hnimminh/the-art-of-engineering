@@ -59,6 +59,18 @@ Host PREFIX* 172.31.*.*
 * generate ssl key & cert ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt```
 * print out certificate x509 in text form: ```openssl x509 -text -noout -in github_com.csr```
 
+
+## OPENVPN3
+```
+wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub
+apt-key add openvpn-repo-pkg-key.pub
+wget -O /etc/apt/sources.list.d/openvpn3.list https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-buster.list
+apt update
+apt install openvpn3
+mkdir /etc/openvpn3/client
+openvpn3 session-start --config /etc/openvpn3/client/mind.ovpn 
+```
+
 ## MACOS X
 
 * Dock Hide Time
