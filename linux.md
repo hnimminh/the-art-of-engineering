@@ -54,6 +54,18 @@ Host PREFIX* 172.31.*.*
 * Detach a running session 	`screen -d <session_name>`
 * Kill session ```screen -X -S <session_name> quit
 
+## IPTABLES CLEAN
+```
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+
+iptables -t nat -F
+iptables -t mangle -F
+iptables -F
+iptables -X
+```
+
 
 ## OPENSSL
 * generate ssl key & cert ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt```
