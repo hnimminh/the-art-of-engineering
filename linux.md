@@ -80,7 +80,10 @@ wget -O /etc/apt/sources.list.d/openvpn3.list https://swupdate.openvpn.net/commu
 apt update
 apt install openvpn3
 mkdir /etc/openvpn3/client
-openvpn3 session-start --config /etc/openvpn3/client/mind.ovpn 
+openvpn3 session-start --config /etc/openvpn3/client/mind.ovpn
+openvpn3 sessions-list
+openvpn3 session-manage --disconnect  --config /etc/openvpn3/client/mind.ovpn
+
 ```
 
 ## MACOS X
