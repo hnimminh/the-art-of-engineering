@@ -41,6 +41,12 @@ Host PREFIX* 172.31.*.*
     IdentityFile ~/.ssh/minh.general.private
     ProxyJump SSHJUMPPOINT
  ```
+* SSH Tunnel
+
+
+* ```ssh -L local-port:target-host-address:target-host-port remote-host-address```
+* ```ssh -L 80 172.16.1.2:8080 minh@1.1.1.1```
+
 
 ## REDIS
 * install redis-cli by 1 command ```wget http://download.redis.io/redis-stable.tar.gz && tar xvzf redis-stable.tar.gz && cd redis-stable && make & cp src/redis-cli /usr/bin/```
