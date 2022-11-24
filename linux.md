@@ -2,6 +2,7 @@
 
 ## NETWORKING
 * TCP DUMP: ```tcpdump -nqt -s0 -A -i any port 5060 |grep "computer networking" -A 10 -B 10```
+* TCP DUMP with portrange: ```tcpdump -nqt -s0 -A -i any -an portrange 1-25```
 * Ping with MTU size: ```ping 122.152.145.101 -s 1500```
 
 
