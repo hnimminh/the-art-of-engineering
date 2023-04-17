@@ -12,6 +12,7 @@
 * curl with digest auth ```curl --digest --user minh:secret https://minh.com/```
 * trace: ```last -x```
 * investigate: ```grep -iv ': starting\|kernel: .*: Power Button\|watching system buttons\|Stopped Cleaning Up\|Started Crash recovery kernel' /var/log/messages /var/log/syslog /var/log/apcupsd* \| grep -iw 'recover[a-z]*\|power[a-z]*\|shut[a-z ]*down\|rsyslogd\|ups'```
+* 10 bigest file: ```du -a /var/log | sort -n -r | head -n 10```
 
 ## NTP _ CHRONY
 ```
