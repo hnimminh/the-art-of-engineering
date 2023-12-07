@@ -62,7 +62,8 @@ Host PREFIX* 172.31.*.*
 * Detach a running session 	`screen -d <session_name>`
 * Kill session ```screen -X -S <session_name> quit
 
-## IPTABLES CLEAN
+## IPTABLES
+### FLUSH
 ```
 iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT
@@ -72,6 +73,15 @@ iptables -t nat -F
 iptables -t mangle -F
 iptables -F
 iptables -X
+```
+
+```
+nft flush ruleset
+```
+
+### RESET COUNTER
+```
+iptables -Z -L -v
 ```
 
 
