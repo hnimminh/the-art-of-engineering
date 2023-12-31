@@ -123,3 +123,21 @@ sudo scutil --set LocalHostName <new host name>
 sudo scutil --set ComputerName <new name>
 dscacheutil -flushcache
 ```
+
+## GIT
+```
+# track:
+git remote add upstream git@github.com:signalwire/freeswitch.git
+
+# Update:
+git fetch upstream
+git rebase upstream/master
+git push
+git push --tags
+
+# new branch from tag
+git checkout tags/v1.10.11 -b v1.10.11-libre-a
+
+```
+
+
