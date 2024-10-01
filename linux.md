@@ -88,6 +88,7 @@ iptables -Z -L -v
 ## OPENSSL
 * generate ssl key & cert ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt```
 * print out certificate x509 in text form: ```openssl x509 -text -noout -in github_com.csr```
+* print out certificate signing request in text form: ```openssl req -text -in x.CSR```
 
 
 ## OPENVPN3
