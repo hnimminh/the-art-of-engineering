@@ -149,7 +149,7 @@ git config --global gpg.format ssh
 ```
 
 ## GPG (mac)
-```
+``` https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
 # install
 brew install gpg
 # generate key
@@ -158,5 +158,13 @@ gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
 # get the public key using key ID
 gpg --armor --export 3AA5C34371567BD2
+
+# add the GPG key shekk
+echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zprofile;
+
+# prompt you to enter a PIN or passphrase when required
+brew install pinentry-mac
+echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf
+killall gpg-agent
 ```
 
