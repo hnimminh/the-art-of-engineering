@@ -139,6 +139,24 @@ git push --tags
 # new branch from tag
 git checkout tags/v1.10.11 -b v1.10.11-libre-a
 
+# configure Git to sign all commits and tags by default
+git config --global commit.gpgsign true
+git config --global tag.gpgSign true
+# tell git the sign key
+git config --global user.signingkey 3AA5C34371567BD2 (or /PATH/TO/.SSH/KEY.PUB)
+# Configure Git to use SSH to sign commits and tags:
+git config --global gpg.format ssh
 ```
 
+## GPG (mac)
+```
+# install
+brew install gpg
+# generate key
+gpg --full-generate-key
+# show key
+gpg --list-secret-keys --keyid-format=long
+# get the public key using key ID
+gpg --armor --export 3AA5C34371567BD2
+```
 
