@@ -64,12 +64,12 @@ revert   | Revert previous commit
 ### Example
 
 ```
-fix(ingress): multiple device race condition 
+fix(kamailio): multiple device race condition 
 
 Due to AOR allow only 1 contact lead to rate condition in case multiple
-device which require AOR store atleast 3 devices contact
+device which require AOR store atleast 3 device contacts
 
-Refs: VOIP1234
+Refs: OPS1233
 ```
 
 ```
@@ -77,7 +77,7 @@ chore(freeswitch): hiding software info in SDP
 
 Change o & c username to `-` to secure with default value FreeSWITCH
 
-Refs: VOIP1234 
+Refs: OPS1234 
 ```
 
 ### How
